@@ -14,17 +14,17 @@ This CLI application allows you to manage a database of Technical Mentors (TMs) 
 
 1.  Run the application: python cli.py
 2.  Follow the prompts to perform the desired operations:
-    Create TMs
-    Update TMs
-    Delete TMs
-    Create Students
-    Update Students
-    Delete Students
-    Assign Students to TMs
-    List all TMs
-    List all Students
-    View Students by TM
-    Exit the application
+    - Create TMs
+    - Update TMs
+    - Delete TMs
+    - Create Students
+    - Update Students
+    - Delete Students
+    - Assign Students to TMs
+    - List all TMs
+    - List all Students
+    - View Students by TM
+    - Exit the application
 
 ## Database
 
