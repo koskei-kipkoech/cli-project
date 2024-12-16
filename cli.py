@@ -23,3 +23,17 @@ def create_tm():
     session.commit()
     print(f"TM '{name}' with ID {tm.id} created successfully.")
 
+
+def update_tm():
+    tm_id = int(input("Enter the ID to update: "))
+    tm = session.get(TM, tm_id)
+    if not tm:
+        print(f"TM with ID {tm_id} not found.")
+        return
+    tm.name =  input(f"Enter new name for TM (current : {tm.name}): ") or tm.name
+    tm.email = input(f"Enter new email for TM (current : {tm.email}):") or tm.email
+    session.commit()
+    print(f"TM with ID {tm_id} updated successfully.")
+
+
+def delete_tm():
