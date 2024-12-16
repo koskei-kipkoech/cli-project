@@ -9,7 +9,7 @@ class TM(Base):
     name = Column(String, nullable=False)
     email = Column(String, unique=True, nullable=False)
 
-    students = relationship("Student", back_populates="tms")
+    students = relationship("Student", back_populates="tm")
 
     def __repr__(self):
         return f'TM(id={self.id}, name="{self.name}", email="{self.email}")'
